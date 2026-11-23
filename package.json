@@ -1,0 +1,36 @@
+{
+  "name": "warm-crm",
+  "version": "0.1.0",
+  "private": true,
+  "description": "A local-first, offline-capable personal relationship companion for staying genuinely connected IRL.",
+  "type": "module",
+  "scripts": {
+    "start": "tsx src/server/start.ts",
+    "dev": "tsx src/server/dev.ts",
+    "build": "vite build && tsc -p tsconfig.server.json",
+    "serve": "node dist/server/index.js",
+    "typecheck": "tsc --noEmit -p tsconfig.client.json && tsc --noEmit -p tsconfig.server.json",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@hono/node-server": "^2.1.11",
+    "better-sqlite3": "^13.2.0",
+    "hono": "^4.13.21",
+    "lucide-react": "^1.78.0",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.3.5",
+    "@types/better-sqlite3": "^9.6.0",
+    "@types/node": "^22.20.5",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@vitejs/plugin-react": "^4.7.0",
+    "tailwindcss": "^4.3.5",
+    "tsx": "^4.23.15",
+    "typescript": "^5.9.3",
+    "vite": "^6.4.6",
+    "vitest": "^3.2.7"
+  }
+}
